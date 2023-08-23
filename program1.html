@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        (
+        function(arr){
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+            }
+        )([4,5,6,7,8,9,0]);
+
+            //annoymous function
+
+        var annoymousOdd=function(arr){
+            for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+        }
+        annoymousOdd([4,5,6,7,8,9,0])
+
+        // arrow function
+
+        var arrowOdd=(arr)=>{
+            for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+        }
+        arrowOdd([4,5,6,7,8,9,0])
+
+        // normal function
+
+        function normalOdd(arr){
+            for(var i=0;i<arr.length;i++){
+                    if(arr[i]%2!==0){
+                        console.log(arr[i])
+                    }
+                }
+        }
+        normalOdd([4,5,6,7,8,9,0])
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    
+    <script>
+         //---------sum of n number----------
+         //IIFE FUNCTION
+         (
+            function(sum){
+                var s=0
+                for(var i=0;i<sum.length;i++){
+                    
+                    s=s+sum[i];
+                    
+                }    
+                console.log(s)  
+            }
+         )([2,4,6,7,8,9,22,3]);
+         //anoyomos function
+         var sumannoy=function (sum)
+         {
+                var s=0
+                for(var i=0;i<sum.length;i++){
+                    
+                    s=s+sum[i];
+                    
+                }    
+                console.log(s)  
+            }
+            sumannoy([2,4,6,7,8,9,22,3])
+
+            //arrow function
+            var sumarrow=(sum)=> {
+                var s=0
+                for(var i=0;i<sum.length;i++){
+                    
+                    s=s+sum[i];
+                    
+                }    
+                console.log(s)  
+            }
+            sumannoy([2,4,6,7,8,9,22,3])
+
+    </script>
+</body>
+</html>

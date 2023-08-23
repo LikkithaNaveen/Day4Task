@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [5, 9, 63, 29, 35, 6, 55, 23]
+        var prime = [];
+        var p=[]
+        var p1=[]
+//normal  function
+function isPrime(item) {
+    var identifier = item / 2;
+      for (var j = 2; j <= identifier; j++) {
+       if ((item % j) == 0) { // modulous
+        return false;
+       } 
+     }
+     return true;
+}
+for (var index = 0; index < a.length; index++) {
+  if (isPrime(a[index])) {
+      prime.push(a[index])
+  }
+}
+
+console.log(prime);
+//annoymous function
+var annoyprime =function(item)
+{
+var identifier=item/2;
+var identifier = item / 2;
+      for (var j = 2; j <= identifier; j++) {
+       if ((item % j) == 0) { 
+        return false;
+       } 
+     }
+     return true;
+}
+for (var index = 0; index < a.length; index++) {
+  if (annoyprime(a[index])) {
+      p.push(a[index])
+  }
+}
+console.log(p);
+annoyprime([5, 9, 63, 29, 35, 6, 55, 23])
+
+//arrow function
+var arrowprime=(item)=>{
+var identifier=item/2;
+var identifier = item / 2;
+      for (var j = 2; j <= identifier; j++) {
+       if ((item % j) == 0) { 
+        return false;
+       } 
+     }
+     return true;
+}
+for (var index = 0; index < a.length; index++) {
+  if (annoyprime(a[index])) {
+      p1.push(a[index])
+  }
+}
+console.log(p1);
+arrowprime([5, 9, 63, 29, 35, 6, 55, 23])
+
+    </script>
+</body>
+</html>
